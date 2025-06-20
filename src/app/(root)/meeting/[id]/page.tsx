@@ -15,6 +15,7 @@ import "@stream-io/video-react-sdk/dist/css/styles.css"
 const MeetingPage = () => {
   const { id } =  useParams();
   const { isLoaded, user } = useUser();
+  if (!id) return <div>Invalid Call ID</div>;
   const { call, isCallLoading } = useGetCallById(id);
   const [isSetupComplete, setIsSetupComplete] = useState(false);
 
