@@ -1,10 +1,27 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+# Environment Variables
+
+To run this project, you will need to add the following environment variables to your `.env` file:
+
+### DO NOT COPY ALL, THESE ARE ONLY EXAMPLES
+
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pFjY291bnRzLmRldiQ
+CLERK_SECRET_KEY=sk_test_tDu022wLRbI0noxsRFFqd
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_STREAM_API_KEY=56tr
+NEXT_PUBLIC_BASE_URL=localhost:3000
+STREAM_SECRET_KEY=69zeu6xp47y75a67dhm39jmpvmmubd 
+```
+
 ## Getting Started
 
 First, run the development server:
 
 ```bash
+npm install
 npm run dev
 # or
 yarn dev
